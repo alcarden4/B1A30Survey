@@ -14,7 +14,7 @@ Global_info.sideRunNum = 0; //indicates which Triangle configuration side length
 Global_info.angleRunNum = 0; //indicates which Triangle configuration angle size is up next
 Global_info.consent = 0;
 Global_info.comments = 0;
-Global_info.TotRuns = 120;
+Global_info.TotRuns = 8;
 
 /** Variable that decides which question to ask next (chooses randomly)  */
 Global_info.QuestionNum = 0;
@@ -107,11 +107,11 @@ function trainTriangle() {
     // drawing the triangle
     //parameters of the run:
     var LengthAngleSideOrig = 100;
-    var AngleOrig = Math.PI / 4; //Size of angle in radians - 45 deg
+    var AngleOrig = Math.PI / 6; //Size of angle in radians - 30 degrees
     var LengthBaseOrig = 600; //Max Base Length
     var TriBaseXStartOrig = 150; //Origin position in the X axis for maximal base length
     var TriBaseXEndOrig = LengthBaseOrig + TriBaseXStartOrig; //End position of base for maximal base length
-    var BaseLengthFactor = 0.7; //Get the current percent of side length from Global_info.sideRunNum
+    var BaseLengthFactor = 1;
     var BaseLength = LengthBaseOrig * BaseLengthFactor;
     var TriBaseXStart = TriBaseXStartOrig + 0.5 * (1 - BaseLengthFactor) * LengthBaseOrig;
     var TriBaseXEnd = TriBaseXStart + BaseLength;
@@ -162,7 +162,7 @@ function trainTriangle() {
 
     DecrAng = function () {
         paper2.clear();
-        TriSideYLengthUp = Math.tan(Math.PI / 6) * LengthAngleSideOrig * BaseLengthFactor;
+        TriSideYLengthUp = Math.tan(Math.PI / 8) * LengthAngleSideOrig * BaseLengthFactor;
         DrawTestTriangle(TriBaseXStart, TriBaseXEnd, TriBaseYPos, TriSideXLengthIn, TriSideYLengthUp);
         TriSideYLengthUp = Math.tan(AngleOrig) * LengthAngleSideOrig * BaseLengthFactor;
     };
@@ -184,8 +184,8 @@ function drawTriangle() {
 
     var paper = Snap("#triangle").attr({width: "1500", height: "1000"});
 
-    var TriBaseLengthPerArray = [1, 0.75, 0.5, 0.25, 0.1];
-    var TriBaseAngleArray = [Math.PI / 6, Math.PI / 4, Math.PI / 3];
+    var TriBaseLength = 1;
+    var TriBaseAngle = Math.PI / 6;
     var dist = function (pt1, pt2) {
         var dx = pt1.x - pt2.x;
         var dy = pt1.y - pt2.y;
@@ -195,7 +195,7 @@ function drawTriangle() {
     // drawing the triangle
     //parameters of the run:
     var LengthAngleSideOrig = 100;
-    var AngleOrig = TriBaseAngleArray[Math.floor(Global_info.angleRunNum % 3)]; //Size of angle in radians
+    var AngleOrig = TriBaseAngle;
     /** Gets question from array of questions. */
     Global_info.QuestionNum = Global_info.angleRunNum;
     /** Question is a string of the actual question */
@@ -206,7 +206,7 @@ function drawTriangle() {
     var LengthBaseOrig = 600; //Max Base Length
     var TriBaseXStartOrig = 150; //Origin position in the X axis for maximal base length
     var TriBaseXEndOrig = LengthBaseOrig + TriBaseXStartOrig; //End position of base for maximal base length
-    var BaseLengthFactor = TriBaseLengthPerArray[Math.floor(Global_info.sideRunNum % 5)];
+    var BaseLengthFactor = TriBaseLength;
     // Get the current percent of side length from Global_info.sideRunNum
     var BaseLength = LengthBaseOrig * BaseLengthFactor;
     var TriBaseXStart = TriBaseXStartOrig + 0.5 * (1 - BaseLengthFactor) * LengthBaseOrig;
@@ -368,7 +368,7 @@ function submit_demographis() {
     }
     if (isNaN(age) == true || isNaN(education) == true) {
         alert("Please enter a number value for age and education.");
-        return false;
+        return none;
     }
     else {
         sendRequestPost('gender', gender);
