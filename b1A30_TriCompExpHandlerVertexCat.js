@@ -3,6 +3,8 @@
  * Code based from Yuval Hart.
  */
 
+/** Triangle experiment with triangle of base length factor of 1 and angle 30. */
+
 Global_info = {};
 Global_info.start = Date.now();
 Global_info.end = 0;
@@ -362,7 +364,10 @@ function submit_demographis() {
     var education = document.getElementById("education").value;
 
     if (gender == '' || age == '' || education == '') {
-//		onContinue.curPage = onContinue.curPage-1;
+        return false;
+    }
+    if (isNaN(age) == true || isNaN(education) == true) {
+        alert("Please enter a number value for age and education.");
         return false;
     }
     else {
