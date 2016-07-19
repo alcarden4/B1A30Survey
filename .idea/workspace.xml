@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="054b2b81-ebaf-4340-b714-212268764a26" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/b1A30_TriCompSnapVertexCat.html" afterPath="$PROJECT_DIR$/b1A30_TriCompSnapVertexCat.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/b1A30_ajaxMessagesVertexCategorical.js" afterPath="$PROJECT_DIR$/b1A30_ajaxMessagesVertexCategorical.js" />
     </list>
     <ignored path="B1A30Survey.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -23,11 +23,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="b1A30_TriCompSnapVertexCat.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="b1A30_TriCompSnapVertexCat.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/b1A30_TriCompSnapVertexCat.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="551">
               <caret line="173" column="34" selection-start-line="173" selection-start-column="34" selection-end-line="173" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="b1A30_ajaxMessagesVertexCategorical.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/b1A30_ajaxMessagesVertexCategorical.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="287">
+              <caret line="46" column="50" selection-start-line="46" selection-start-column="34" selection-end-line="46" selection-end-column="50" />
               <folding />
             </state>
           </provider>
@@ -59,6 +69,7 @@
         <option value="$PROJECT_DIR$/b1A30_xml_writer.php" />
         <option value="$PROJECT_DIR$/b1A30_TriCompExpHandlerVertexCat.js" />
         <option value="$PROJECT_DIR$/b1A30_TriCompSnapVertexCat.html" />
+        <option value="$PROJECT_DIR$/b1A30_ajaxMessagesVertexCategorical.js" />
       </list>
     </option>
   </component>
@@ -189,12 +200,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1468622125919</updated>
-      <workItem from="1468622127152" duration="4222000" />
+      <workItem from="1468622127152" duration="4630000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4222000" />
+    <option name="totallyTimeSpent" value="4630000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="31" y="23" width="1620" height="987" extended-state="0" />
@@ -235,14 +246,6 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/b1A30_KLogger.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/b1A30_ajaxMessagesVertexCategorical.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -296,6 +299,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="551">
           <caret line="173" column="34" selection-start-line="173" selection-start-column="34" selection-end-line="173" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/b1A30_ajaxMessagesVertexCategorical.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="46" column="50" selection-start-line="46" selection-start-column="34" selection-end-line="46" selection-end-column="50" />
           <folding />
         </state>
       </provider>
