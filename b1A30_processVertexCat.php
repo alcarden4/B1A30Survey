@@ -4,7 +4,7 @@
 
 
 header('Content-Type: text/html; charset=utf-8');
-require_once 'KLogger.php';
+require_once 'b1A30_KLogger.php';
 
 $log = new KLogger ( "/var/www/html/php/b1A30_logVertexCat.txt" , KLogger::DEBUG );
 
