@@ -107,11 +107,11 @@ function trainTriangle() {
     // drawing the triangle
     //parameters of the run:
     var LengthAngleSideOrig = 100;
-    var AngleOrig = Math.PI / 6; //Size of angle in radians - 30 degrees
+    var AngleOrig = Math.PI / 4; //Size of angle in radians - 45 degrees
     var LengthBaseOrig = 600; //Max Base Length
     var TriBaseXStartOrig = 150; //Origin position in the X axis for maximal base length
     var TriBaseXEndOrig = LengthBaseOrig + TriBaseXStartOrig; //End position of base for maximal base length
-    var BaseLengthFactor = 1;
+    var BaseLengthFactor = .7;
     var BaseLength = LengthBaseOrig * BaseLengthFactor;
     var TriBaseXStart = TriBaseXStartOrig + 0.5 * (1 - BaseLengthFactor) * LengthBaseOrig;
     var TriBaseXEnd = TriBaseXStart + BaseLength;
@@ -143,13 +143,13 @@ function trainTriangle() {
 
     IncrDist = function () {
         paper2.clear();
-        DrawTestTriangle(TriBaseXStart - 100, TriBaseXEnd + 100, TriBaseYPos, TriSideXLengthIn, TriSideYLengthUp);
+        DrawTestTriangle(TriBaseXStart - 20, TriBaseXEnd + 20, TriBaseYPos, TriSideXLengthIn, TriSideYLengthUp);
 
     };
 
     DecrDist = function () {
         paper2.clear();
-        DrawTestTriangle(TriBaseXStart, TriBaseXEnd - 50, TriBaseYPos, TriSideXLengthIn, TriSideYLengthUp);
+        DrawTestTriangle(TriBaseXStart + 20, TriBaseXEnd - 20, TriBaseYPos, TriSideXLengthIn, TriSideYLengthUp);
     };
 
     IncrAng = function () {
@@ -162,7 +162,7 @@ function trainTriangle() {
 
     DecrAng = function () {
         paper2.clear();
-        TriSideYLengthUp = Math.tan(Math.PI / 8) * LengthAngleSideOrig * BaseLengthFactor;
+        TriSideYLengthUp = Math.tan(Math.PI / 6) * LengthAngleSideOrig * BaseLengthFactor;
         DrawTestTriangle(TriBaseXStart, TriBaseXEnd, TriBaseYPos, TriSideXLengthIn, TriSideYLengthUp);
         TriSideYLengthUp = Math.tan(AngleOrig) * LengthAngleSideOrig * BaseLengthFactor;
     };
